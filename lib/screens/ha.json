@@ -1,0 +1,197 @@
+{
+  "info": {
+    "_postman_id": "0cc360e9-6bb3-4a55-abb9-748d8aac5349",
+    "name": "My home",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "register user",
+      "id": "b93a41e5-53f0-4e30-99a8-b03152ee0b72",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "surname", "value": "Baubek", "type": "text" },
+            {
+              "key": "name",
+              "value": "Maksat",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "email",
+              "value": "baubek.maksat@yandex.ru",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "username",
+              "value": "baubek.maksat",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "password",
+              "value": "Farabi2020",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        },
+        "url": "http://test.profcleaning.kz/api/v1/registration"
+      },
+      "response": []
+    },
+    {
+      "name": "get user",
+      "id": "bc40b236-0578-45b6-87ca-b466cb6b89ed",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiOTQwNjU3NWE4OTg2NGUwNGMzMTU2NjdlMjhmOTY2ODg4YTY0NzNjZmJkYjdkMzkzOTVmYjg1MjRlNmEyMjQ5YmM0NmRkYzNjNmY3YjQ2OWYiLCJpYXQiOjE2NTAyMTM3MjIuMTczNTczLCJuYmYiOjE2NTAyMTM3MjIuMTczNTc4LCJleHAiOjE2ODE3NDk3MjIuMTcyNDA0LCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.Cf5oQhuqIX9hHo5DPhRt1IaaYv1t4H3HX04C_8JHVjRi-zoM7Rq84EXNAn_ikyvqCU2Rb_Ug2yEJ9h8CUzX7bipjiz06nKucyC8FR5IJS68ThBHqYqZgp6xp1thbAD5V08IBG3Rltmw8UKPPUaOofUCw0NRPy_xbSAcp9EaZqIZkBC24Z-r8_rknJFZQrtHAM9zQ93w89uX4jk62ERBP5-ZI6lt_DWByZyrxJdBgZ0U_Gw89aLPFe717CZcsNWXA1yekZAoYMIjOPTjHCzAWg_4TOFotJr5WuAFzksplQIisFv9yTdRSd3TiuUyar0v_hNaTiKjGykNiSCOgYg4JdXh7kPuR9AlBzVyjYRTx0rrC0l0lHzn067PZ5Up2ySjaq8T7m_VZAaxNJayVAIupkf6cVXi-Da9pgFuJcpznQs-t_qETNvqF2DGueZ9ct_l5slcVF10YTSNoY2OrCEb-J72z51Wmvznw_haB4vBHPXQWKxbA1z1tBZXlglsPZtSbPJAaQBappohABPfjxkV7tXFHCrpMb6IGaEYd8Vmf0WdmcFxrdbb2BcgwgelAaFUk3gCXehAl--nVRX4Rv9mp4fAz_z8wQ2wre4eXwjxUQE_PT_wutU58ssFfY9uzr2oPegVK9s4G2mSjfIo2IVvRSNDxrzsEeWNCV0LUzFymJw0"
+          }
+        },
+        "method": "GET",
+        "header": [],
+        "url": "http://127.0.0.1:8000/api/v1/user"
+      },
+      "response": []
+    },
+    {
+      "name": "store houses",
+      "id": "799764da-e9d6-44d9-8042-894a0ebf20c9",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiOTQwNjU3NWE4OTg2NGUwNGMzMTU2NjdlMjhmOTY2ODg4YTY0NzNjZmJkYjdkMzkzOTVmYjg1MjRlNmEyMjQ5YmM0NmRkYzNjNmY3YjQ2OWYiLCJpYXQiOjE2NTAyMTM3MjIuMTczNTczLCJuYmYiOjE2NTAyMTM3MjIuMTczNTc4LCJleHAiOjE2ODE3NDk3MjIuMTcyNDA0LCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.Cf5oQhuqIX9hHo5DPhRt1IaaYv1t4H3HX04C_8JHVjRi-zoM7Rq84EXNAn_ikyvqCU2Rb_Ug2yEJ9h8CUzX7bipjiz06nKucyC8FR5IJS68ThBHqYqZgp6xp1thbAD5V08IBG3Rltmw8UKPPUaOofUCw0NRPy_xbSAcp9EaZqIZkBC24Z-r8_rknJFZQrtHAM9zQ93w89uX4jk62ERBP5-ZI6lt_DWByZyrxJdBgZ0U_Gw89aLPFe717CZcsNWXA1yekZAoYMIjOPTjHCzAWg_4TOFotJr5WuAFzksplQIisFv9yTdRSd3TiuUyar0v_hNaTiKjGykNiSCOgYg4JdXh7kPuR9AlBzVyjYRTx0rrC0l0lHzn067PZ5Up2ySjaq8T7m_VZAaxNJayVAIupkf6cVXi-Da9pgFuJcpznQs-t_qETNvqF2DGueZ9ct_l5slcVF10YTSNoY2OrCEb-J72z51Wmvznw_haB4vBHPXQWKxbA1z1tBZXlglsPZtSbPJAaQBappohABPfjxkV7tXFHCrpMb6IGaEYd8Vmf0WdmcFxrdbb2BcgwgelAaFUk3gCXehAl--nVRX4Rv9mp4fAz_z8wQ2wre4eXwjxUQE_PT_wutU58ssFfY9uzr2oPegVK9s4G2mSjfIo2IVvRSNDxrzsEeWNCV0LUzFymJw0"
+          }
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "lat", "value": "71.55", "type": "text" },
+            { "key": "let", "value": "82.22", "type": "text" },
+            {
+              "key": "address",
+              "value": "Baurzhan Momushuly Avenue",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "http://127.0.0.1:8000/api/v1/houses"
+      },
+      "response": []
+    },
+    {
+      "name": "update houses",
+      "id": "e3f6570f-8392-48a2-9525-1c5c784dcac9",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiOTQwNjU3NWE4OTg2NGUwNGMzMTU2NjdlMjhmOTY2ODg4YTY0NzNjZmJkYjdkMzkzOTVmYjg1MjRlNmEyMjQ5YmM0NmRkYzNjNmY3YjQ2OWYiLCJpYXQiOjE2NTAyMTM3MjIuMTczNTczLCJuYmYiOjE2NTAyMTM3MjIuMTczNTc4LCJleHAiOjE2ODE3NDk3MjIuMTcyNDA0LCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.Cf5oQhuqIX9hHo5DPhRt1IaaYv1t4H3HX04C_8JHVjRi-zoM7Rq84EXNAn_ikyvqCU2Rb_Ug2yEJ9h8CUzX7bipjiz06nKucyC8FR5IJS68ThBHqYqZgp6xp1thbAD5V08IBG3Rltmw8UKPPUaOofUCw0NRPy_xbSAcp9EaZqIZkBC24Z-r8_rknJFZQrtHAM9zQ93w89uX4jk62ERBP5-ZI6lt_DWByZyrxJdBgZ0U_Gw89aLPFe717CZcsNWXA1yekZAoYMIjOPTjHCzAWg_4TOFotJr5WuAFzksplQIisFv9yTdRSd3TiuUyar0v_hNaTiKjGykNiSCOgYg4JdXh7kPuR9AlBzVyjYRTx0rrC0l0lHzn067PZ5Up2ySjaq8T7m_VZAaxNJayVAIupkf6cVXi-Da9pgFuJcpznQs-t_qETNvqF2DGueZ9ct_l5slcVF10YTSNoY2OrCEb-J72z51Wmvznw_haB4vBHPXQWKxbA1z1tBZXlglsPZtSbPJAaQBappohABPfjxkV7tXFHCrpMb6IGaEYd8Vmf0WdmcFxrdbb2BcgwgelAaFUk3gCXehAl--nVRX4Rv9mp4fAz_z8wQ2wre4eXwjxUQE_PT_wutU58ssFfY9uzr2oPegVK9s4G2mSjfIo2IVvRSNDxrzsEeWNCV0LUzFymJw0"
+          }
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "_method", "value": "put", "type": "text" },
+            { "key": "lat", "value": "50.00", "type": "text" },
+            { "key": "let", "value": "60.00", "type": "text" },
+            { "key": "address", "value": "5 avenue", "type": "text" }
+          ]
+        },
+        "url": "http://127.0.0.1:8000/api/v1/houses/2"
+      },
+      "response": []
+    },
+    {
+      "name": "user login",
+      "id": "48c5978e-9d74-4176-9086-b9ab0b4fa53d",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/v1/login?username=baubek.maksat&password=Farabi2020",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["api", "v1", "login"],
+          "query": [
+            { "key": "username", "value": "baubek.maksat" },
+            { "key": "password", "value": "Farabi2020" }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete houses",
+      "id": "132b96d2-1cd5-4d88-9424-6568b015878e",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiOTQwNjU3NWE4OTg2NGUwNGMzMTU2NjdlMjhmOTY2ODg4YTY0NzNjZmJkYjdkMzkzOTVmYjg1MjRlNmEyMjQ5YmM0NmRkYzNjNmY3YjQ2OWYiLCJpYXQiOjE2NTAyMTM3MjIuMTczNTczLCJuYmYiOjE2NTAyMTM3MjIuMTczNTc4LCJleHAiOjE2ODE3NDk3MjIuMTcyNDA0LCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.Cf5oQhuqIX9hHo5DPhRt1IaaYv1t4H3HX04C_8JHVjRi-zoM7Rq84EXNAn_ikyvqCU2Rb_Ug2yEJ9h8CUzX7bipjiz06nKucyC8FR5IJS68ThBHqYqZgp6xp1thbAD5V08IBG3Rltmw8UKPPUaOofUCw0NRPy_xbSAcp9EaZqIZkBC24Z-r8_rknJFZQrtHAM9zQ93w89uX4jk62ERBP5-ZI6lt_DWByZyrxJdBgZ0U_Gw89aLPFe717CZcsNWXA1yekZAoYMIjOPTjHCzAWg_4TOFotJr5WuAFzksplQIisFv9yTdRSd3TiuUyar0v_hNaTiKjGykNiSCOgYg4JdXh7kPuR9AlBzVyjYRTx0rrC0l0lHzn067PZ5Up2ySjaq8T7m_VZAaxNJayVAIupkf6cVXi-Da9pgFuJcpznQs-t_qETNvqF2DGueZ9ct_l5slcVF10YTSNoY2OrCEb-J72z51Wmvznw_haB4vBHPXQWKxbA1z1tBZXlglsPZtSbPJAaQBappohABPfjxkV7tXFHCrpMb6IGaEYd8Vmf0WdmcFxrdbb2BcgwgelAaFUk3gCXehAl--nVRX4Rv9mp4fAz_z8wQ2wre4eXwjxUQE_PT_wutU58ssFfY9uzr2oPegVK9s4G2mSjfIo2IVvRSNDxrzsEeWNCV0LUzFymJw0"
+          }
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [{ "key": "_method", "value": "delete", "type": "text" }]
+        },
+        "url": "http://127.0.0.1:8000/api/v1/houses/2"
+      },
+      "response": []
+    },
+    {
+      "name": "update user",
+      "id": "224bb08b-17a5-42b0-b48e-a15424ca1ad7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiOTQwNjU3NWE4OTg2NGUwNGMzMTU2NjdlMjhmOTY2ODg4YTY0NzNjZmJkYjdkMzkzOTVmYjg1MjRlNmEyMjQ5YmM0NmRkYzNjNmY3YjQ2OWYiLCJpYXQiOjE2NTAyMTM3MjIuMTczNTczLCJuYmYiOjE2NTAyMTM3MjIuMTczNTc4LCJleHAiOjE2ODE3NDk3MjIuMTcyNDA0LCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.Cf5oQhuqIX9hHo5DPhRt1IaaYv1t4H3HX04C_8JHVjRi-zoM7Rq84EXNAn_ikyvqCU2Rb_Ug2yEJ9h8CUzX7bipjiz06nKucyC8FR5IJS68ThBHqYqZgp6xp1thbAD5V08IBG3Rltmw8UKPPUaOofUCw0NRPy_xbSAcp9EaZqIZkBC24Z-r8_rknJFZQrtHAM9zQ93w89uX4jk62ERBP5-ZI6lt_DWByZyrxJdBgZ0U_Gw89aLPFe717CZcsNWXA1yekZAoYMIjOPTjHCzAWg_4TOFotJr5WuAFzksplQIisFv9yTdRSd3TiuUyar0v_hNaTiKjGykNiSCOgYg4JdXh7kPuR9AlBzVyjYRTx0rrC0l0lHzn067PZ5Up2ySjaq8T7m_VZAaxNJayVAIupkf6cVXi-Da9pgFuJcpznQs-t_qETNvqF2DGueZ9ct_l5slcVF10YTSNoY2OrCEb-J72z51Wmvznw_haB4vBHPXQWKxbA1z1tBZXlglsPZtSbPJAaQBappohABPfjxkV7tXFHCrpMb6IGaEYd8Vmf0WdmcFxrdbb2BcgwgelAaFUk3gCXehAl--nVRX4Rv9mp4fAz_z8wQ2wre4eXwjxUQE_PT_wutU58ssFfY9uzr2oPegVK9s4G2mSjfIo2IVvRSNDxrzsEeWNCV0LUzFymJw0"
+          }
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "_method", "value": "put", "type": "text" },
+            { "key": "notification", "value": "2", "type": "text" }
+          ]
+        },
+        "url": "http://127.0.0.1:8000/api/v1/users/6"
+      },
+      "response": []
+    },
+    {
+      "name": "get user notifications",
+      "id": "b3362f2a-7f48-4e4c-b506-d62be02d55b4",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiOTQwNjU3NWE4OTg2NGUwNGMzMTU2NjdlMjhmOTY2ODg4YTY0NzNjZmJkYjdkMzkzOTVmYjg1MjRlNmEyMjQ5YmM0NmRkYzNjNmY3YjQ2OWYiLCJpYXQiOjE2NTAyMTM3MjIuMTczNTczLCJuYmYiOjE2NTAyMTM3MjIuMTczNTc4LCJleHAiOjE2ODE3NDk3MjIuMTcyNDA0LCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.Cf5oQhuqIX9hHo5DPhRt1IaaYv1t4H3HX04C_8JHVjRi-zoM7Rq84EXNAn_ikyvqCU2Rb_Ug2yEJ9h8CUzX7bipjiz06nKucyC8FR5IJS68ThBHqYqZgp6xp1thbAD5V08IBG3Rltmw8UKPPUaOofUCw0NRPy_xbSAcp9EaZqIZkBC24Z-r8_rknJFZQrtHAM9zQ93w89uX4jk62ERBP5-ZI6lt_DWByZyrxJdBgZ0U_Gw89aLPFe717CZcsNWXA1yekZAoYMIjOPTjHCzAWg_4TOFotJr5WuAFzksplQIisFv9yTdRSd3TiuUyar0v_hNaTiKjGykNiSCOgYg4JdXh7kPuR9AlBzVyjYRTx0rrC0l0lHzn067PZ5Up2ySjaq8T7m_VZAaxNJayVAIupkf6cVXi-Da9pgFuJcpznQs-t_qETNvqF2DGueZ9ct_l5slcVF10YTSNoY2OrCEb-J72z51Wmvznw_haB4vBHPXQWKxbA1z1tBZXlglsPZtSbPJAaQBappohABPfjxkV7tXFHCrpMb6IGaEYd8Vmf0WdmcFxrdbb2BcgwgelAaFUk3gCXehAl--nVRX4Rv9mp4fAz_z8wQ2wre4eXwjxUQE_PT_wutU58ssFfY9uzr2oPegVK9s4G2mSjfIo2IVvRSNDxrzsEeWNCV0LUzFymJw0"
+          }
+        },
+        "method": "GET",
+        "header": [],
+        "url": "http://127.0.0.1:8000/api/v1/user/notifications"
+      },
+      "response": []
+    }
+  ]
+}
